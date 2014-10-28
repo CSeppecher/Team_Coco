@@ -1,0 +1,14 @@
+{
+  "name": "bonoway",
+  "version": "0.0.1",
+  "author": "duke <christophe@khaldi.fr>",
+  "homepage": "http://khaldi.fr",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-jshint": "*"
+  }
+}

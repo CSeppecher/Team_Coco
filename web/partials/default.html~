@@ -1,0 +1,6 @@
+<h1> {{title}} </h1>
+
+<p> {{message}} </p>
+
+<p> Cette page est la page par défaut </p>
+

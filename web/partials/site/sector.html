@@ -1,0 +1,30 @@
+
+
+<div class="secondarybar">
+    <a  href ng-click="back(site.id)"  class="back"> <i class="fa fa-chevron-left"></i> </a>
+
+    <div class="dropdown" ng-init="select(currency)" >
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">{{current.name}} <span class="caret"></span></a>
+        <ul class="dropdown-menu dropdown-menu-center" role="menu" ng-model="myvalue">
+                <li ng-click="select(0)" ng-class="{ here: 0===current.id}" > Toutes les voies </li>
+                <li ng-repeat="sector in sectors" ng-click="select(sector.id)" ng-class="{ here: sector.id===current.id}"> {{sector.name}} </li>
+        </ul>
+    </div>
+
+    <a href ng-click="maping(site.id, current.id)" class="pull-right switch"> <i class="fa fa-map-marker"></i> </a>
+</div>
+
+
+<div class="row" ng-repeat="line in lines" ng-click="detail(line.id)">
+    <h4>
+        <div class="col-xs-7" ng-bind-html="line.name"> </div>
+        <div class="col-xs-2" ng-bind-html="line.grade"> </div>
+    </h4>
+    <h5>
+        <div class="col-xs-3" id="row1" ng-bind-html="line.rate | makeRate"> </div>
+        <small>
+            <div class="col-xs-12"> #debout #jetté </div>
+        </small></h5>
+</div>
+
+

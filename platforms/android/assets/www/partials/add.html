@@ -1,0 +1,48 @@
+ <form role="form" name="myform" action="javascript:void(0);"> <div class="form-group">
+    <input type="text" class="form-control" name="name" placeholder="Nom de la voie" value=""> </div>
+
+<select name="grade" title="Note"> <option value="1">3a</option> <option value="3">3b</option> <option value="5">3c</option>
+    <option value="7">4a</option> <option value="9">4b</option> <option value="11">4c</option>  <option data-divider="true"></option> 
+    <option value="13">5a</option> <option value="14">5a</option> <option value="15">5b</option> <option value="16">5b</option> <option value="17">5c</option> <option value="18">5c</option>  <option data-divider="true"></option>
+    <option selected value="19">6a</option> <option value="20">6a</option> <option value="21">6b</option> <option value="22">6b</option> <option value="23">6c</option> <option value="24">6c</option> <option data-divider="true"></option>
+    <option value="25">7a</option> <option value="26">7a</option> <option value="27">7b</option> <option value="28">7b</option> <option value="29">7c</option> <option value="30">7c</option>  <option data-divider="true"></option>
+    <option value="31">8a</option> <option value="32">8a</option> <option value="33">8b</option> <option value="34">8b</option> <option value="35">8c</option> <option value="36">8c</option>  <option data-divider="true"></option>
+    <option value="37">9a</option> <option value="38">9a</option> <option value="39">9b</option> <option value="40">9b</option> <option value="0">projet</option> </select> 
+
+<select>
+    <option value="-1">Sans note</option> 
+    <option value="0"> <i class="fa fa-thumbs-down"></i> </option>
+    <option value="1"> <i class="fa fa-star"></i> </option>
+    <option value="2"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </option>
+    <option value="3"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></option>
+</select>
+<br>
+
+<button camera ng-model='myPicture'>Take Picture</button>
+
+<br>
+
+<div class="form-group"> <textarea class="form-control" name="abstract" rows="3" placeholder="Description"></textarea> </div>
+
+GPS process : <div class="progress"  id="gpssection"> Searching... </div>
+
+<h4> SECTION DE LOCALISATION DE LA VOIE </h4>
+
+<select ng-model="mySite">
+    <option ng-repeat="site in sites" ng-value="site.id"> {{site.name}} </option>
+</select>
+
+<select>
+    <option ng-repeat="sector in sectors | filter:mySite.id:strict"> {{sector.name}} </option>
+</select>
+
+<center> <button type="submit" id="submeat" class="btn btn-info" onClick=""> Sauvegarder </button> </center></form>
+
+
+<div class="row" ng-repeat="user in users">
+    <h4>
+        <div class="col-xs-5" ng-bind-html="user.username"> </div>
+        <div class="col-xs-5" ng-bind-html="user.pasword"> </div>
+    </h4>
+</div>
+

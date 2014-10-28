@@ -1,0 +1,14 @@
+
+<div class="container-fluid">
+    <h1>
+        <button allign="center" type="button" class="btn btn-default btn-lg" ng-click="back()"> <i class="fa fa-reply"></i> Home </button> <small> List</small></h1>
+    
+    <div class="row" ng-repeat="line in lines" ng-class="{ done: line.accuracy<=5}" ng-click="detail(line.id)">
+        <h5>
+            <div class="col-xs-5" ng-bind-html="line.topo"> </div>
+            <div class="col-xs-5" ng-bind-html="line.name"> </div>
+            <div class="col-xs-2" ng-bind-html="line.grade"> </div>
+        </h5>
+    </div>
+    
+</div>

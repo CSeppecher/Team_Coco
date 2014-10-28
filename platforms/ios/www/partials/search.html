@@ -1,0 +1,46 @@
+
+<br>
+<br>
+<div class="row" align="center">
+    <div class="col-xs-10 col-xs-offset-1">
+        <div class="input-group">
+            <input type="text" class="form-control" ng-model="searchInput.name">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                </span>
+                </div>
+    </div>
+</div>
+
+
+<h4>
+<div class="row" align="center">
+    <div class="col-xs-2 col-xs-offset-2" ng-class="{ activated: activeType == 'all'}" ng-click="setSearchType('all')"> Tout </div>
+    <div class="col-xs-3" ng-class="{ activated: activeType == 'sites'}" ng-click="setSearchType('sites')"> Sites </div>
+    <div class="col-xs-3" ng-class="{ activated: activeType == 'lines'}" ng-click="setSearchType('lines')"> Blocs </div>
+</div>
+</h4>
+<br>
+
+
+<div class="row tile" ng-repeat="site in sites | filter:searchInput" ng-hide="activeType == 'lines'" ng-show="activeType == 'sites' || activeType == 'all'" ng-click="detailSite(site.id)">
+    <img class="couvlist"   ng-src="img/{{site.couv}}">  </img>
+    <div class="col-xs-8">
+        <h4>{{site.name}} <span class="badge">{{site.volume}}</span> </h4> <br>
+        <p> {{site.tag}} </p>
+    </div>
+    <div class="col-xs-4" id="row2">
+    </div>
+</div>
+
+
+
+<div class="row" ng-repeat="line in lines | filter:searchInput" ng-hide="activeType == 'sites'" ng-show="activeType == 'lines' || activeType == 'all'" ng-click="detailLine(line.id)">
+    <h4>
+        <div class="col-xs-6" ng-bind-html="line.name"> </div>
+        <div class="col-xs-2" ng-bind-html="line.grade"> </div>
+    </h4>
+    <h5>
+        <div class="col-xs-4" id="row1"> @ {{line.sitename}}
+        </div>
+</div>

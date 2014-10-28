@@ -1,0 +1,21 @@
+<!-- Webpage detail.html -->
+
+<div class="container-fluid">
+    <center><h2><small> Editing : </small> {{line.name}} {{line.grade}} {{line.accuracy}} </h2> <br>
+
+        GPS process : <button type="button" class="btn btn-default btn-xs" ng-click="pingGps()"> <i class="fa fa-refresh"></i> </button>
+        
+        <div class="progress"  id="gpssection"> Searching... </div>
+
+        <br> <br> <br> <br>
+        
+        <button type="button" class="btn btn-success" ng-click="updating()"> Save <i class="fa fa-check"></i> </button>
+        <button type="button" class="btn btn-default" ng-click="discard()"> Discard <i class="fa fa-times"></i>
+ </button>
+        
+        <br> <br> <br> <br> <br> <br>
+
+
+
+
+</div>

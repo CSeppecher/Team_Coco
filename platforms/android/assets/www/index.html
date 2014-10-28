@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-FR" ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bonoway Beta</title>
+	<meta name="eseppecher" content="JVercout - jerome.vercoutere@gmail.com" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0; user-scalable=0;"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/angular-resource.min.js"></script>
+    <script type="text/javascript" src="js/angular-sanitize.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/lodash/lodash.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/angular-google-maps/angular-google-maps.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/angular-local-storage/angular-local-storage.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/angular-websql/angular-websql.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/scripts.min.js"></script>
+    <script type="text/javascript" src="js/xgps2.js"></script>
+	<link rel="stylesheet" href="assets/css/app.min.css"/> <!-- Include all less files PB WITH FONT-AWESOME-->
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/bonoway.css"/>
+    
+    <style>
+        
+        /* style building area : DEFINITVE STYLE SHOULD BE STORE IN CSS/BONOWAY.CSS */
+    
+    </style>
+    
+</head>
+
+<body ng-controller="mainController" ng-app="myApp" >
+	
+	
+	<main role="main" class="container-fluid adjust">
+        
+    <div ng-view></div>
+    
+	</main>
+	
+
+
+	<!--  <script>
+	window.globalParams = {};
+	globalParams.urlapp = 'http://beta.bonoway.dev/#';
+	</script>-->
+
+</body>
+</html>

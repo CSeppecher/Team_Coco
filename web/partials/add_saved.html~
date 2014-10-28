@@ -1,0 +1,29 @@
+<!-- Webpage add_saved.html -->
+
+<br>
+<br>
+<br>
+<br>
+
+<center>
+    <p> Le nouveau bloc a bien été sauvegardé. </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Button Home -->
+    <button allign="center" type="button" class="btn btn-default btn-lg" ng-click="back_home()">
+        <i class="fa fa-reply"></i>
+        Home
+    </button>
+</center>
+
+
+<form role="form" name="myform" action="javascript:void(0);">
+ 
+<div class="form-group">
+    <input type="text" class="form-control" name="name" placeholder="Nom de la voie" value="">
+</div>
+
+
+

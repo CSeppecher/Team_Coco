@@ -1,0 +1,37 @@
+<!-- Webpage home.html -->
+
+
+<!-- Head -->
+<div class="container-fluid">
+<center>
+
+<!-- Title -->
+<h1> <small> Bonoway Crew beta </small> </h1>
+
+<!-- Text -->
+<p> Here we go developper. </p>
+
+<!-- Button Import -->
+<button type="button" class="btn btn-warning" ng-click="importData()">
+Import
+<i class="fa fa-cloud-download"></i>
+</button>
+
+<!-- Button Export -->
+<button type="button" class="btn btn-success" ng-click="exportData()">
+Export
+<i class="fa fa-cloud-upload"></i>
+</button>
+
+<!-- Line break -->
+<br> <br> <br> <br> <br> <br>
+
+<!-- Button List -->
+<button allign="center" type="button" class="btn btn-default btn-lg" ng-click="showList()">
+List
+<i class="fa fa-list"></i>
+</button>
+
+<!-- Tail -->
+</center>
+</div>

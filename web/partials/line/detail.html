@@ -1,0 +1,30 @@
+<div class="secondarybar">
+    <a  href ng-click="backSector(line.site,line.sector)"  class="back"> <i class="fa fa-chevron-left"></i> </a>
+</div>
+
+
+<div class="line-detail"><h3>
+    <div class="title" ng-bind-html="line.name"> </div>
+    <div class="title" ng-bind-html="line.grade"> </div>
+    <div class="title" ng-bind-html="line.rate | makeRate"> </div>
+</h3> <br>
+<h4>
+<div class="title"> @siteLink/sectorlink </div>
+<div class="title"> #tag1 #rag2 </div>
+</h4>
+</div>
+
+
+
+<img alt="logo" width="100%" height="auto" ng-src="datas/img/{{line.image}}">
+
+
+
+<div class="container">
+
+    <h4> Description :  </h4>
+        
+        <p> {{line.description}} </p>
+        
+        <br> <br>
+</div>
